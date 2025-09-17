@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Roblox Blank Extension",
+  "description": "A placeholder Chrome extension scoped to Roblox.com pages.",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.roblox.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
